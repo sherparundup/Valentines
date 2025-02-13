@@ -139,28 +139,29 @@ const MemoryLane = () => {
         </div>
 
         <div className="flex-col mt-[100px]">
-          <div className="text-white flex justify-center items-center text-7xl">
-            <div className="flex pt-[150px]">But Then</div>
-            <div className="flex justify-center">
-              <img src={GifForLongDistance} alt="" className="w-[150px] md:w-[200px]" />
-            </div>
-          </div>
+  <div className="text-white flex justify-center items-center text-7xl">
+    <div className="flex pt-[150px]">But Then</div>
+    <div className="flex justify-center">
+      <img src={GifForLongDistance} alt="" className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px]" />
+    </div>
+  </div>
 
-          <div className="flex justify-center mt-4">
-            <img src={LongDistance} alt="" className="w-[90%] md:w-[500px]" />
+  <div className="flex justify-center mt-4">
+    <img src={LongDistance} alt="" className="w-[90%] sm:w-[80%] md:w-[500px] lg:w-[600px]" />
 
-            <div className="text-red-900 w-full text-4xl flex-col items-center justify-center">
-              <div className="flex justify-center items-center pb-[100px]">We had to say good bye</div>
-              <div className="flex justify-center p-[20px] text-white text-1xl">
-                <div className="flex w-3/4 justify-center bg-black items-center">
-                  Damn, 111 days felt like forever. I don’t think I’ve ever missed someone this much before...
-                  <br />
-                  (long text about missing someone...)
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className="text-red-900 w-full text-4xl flex-col items-center justify-center">
+      <div className="flex justify-center items-center pb-[100px]">We had to say good bye</div>
+      <div className="flex justify-center p-[20px] text-white text-base sm:text-lg md:text-xl lg:text-2xl">
+        <div className="flex w-11/12 sm:w-3/4 md:w-2/3 justify-center bg-black items-center p-4 rounded-lg">
+          Damn, 111 days felt like forever. I don’t think I’ve ever missed someone this much before...
+          <br />
+          (long text about missing someone...)
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         <div className="flex-col pt-[100px]">
           <div className="flex justify-center text-emerald-700 text-7xl">We so fuckingggggg back</div>
