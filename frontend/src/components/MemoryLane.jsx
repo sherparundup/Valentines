@@ -112,13 +112,13 @@ const MemoryLane = () => {
             <div className="text-white pb-[50px]">Cutieeeeee</div>
             <div className="text-white  ">
               <p className="text-[24px] leading-snug">
-                I got ready for my very first date with a very sweet girl Smriti
+               Look at her she so cutee and beaitiful and smart and caring
                 🤍.<br></br>
-                Meeting you for the first time not knowing how you'd look <br />
-                I was blown away how you looked , it was love at first sight.{" "}
+                She looks like a bunny here <br />
+                I get butterflies everytime i see her  ,im so lucky .{" "}
                 <br />
               </p>
-              <div className=" pt-[10px]   text-3xl   ">2024,02,14</div>
+              <div className=" pt-[10px]   text-3xl   "></div>
             </div>
           </div>
         </div>
