@@ -1,16 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';  // Just import Routes and Route
 import AskingHerTobeMine from './components/AskingHerTobeMine';
-import MemoryLaneAsking from './components/MemoryLaneAsking';
 import MemoryLane from './components/MemoryLane';
 
 const App = () => {
   return (
-      <Routes>
-        <Route path="/" element={<AskingHerTobeMine />} />
-        <Route path="/MemoryLane" element={<MemoryLane />} />
-        {/* <Route path="/" element={<MemoryLaneAsking />} /> */}
-      </Routes>
+    <Routes>  {/* Only Routes and Route components here */}
+      <Route path="/" element={<AskingHerTobeMine />} />
+      <Route path="/MemoryLane" element={<MemoryLane />} />
+    </Routes>
   );
 };
 
