@@ -26,9 +26,9 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
 
   return (
     <div className="max-w-6xl mx-auto antialiased font-sans px-8 py-24">
-      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-24">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
         <div>
-          <div className="relative h-[500px] w-full">
+          <div className="relative h-[300px] sm:h-[500px] w-full">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -56,20 +56,21 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex justify-between flex-col py-6">
+
+        <div className="flex flex-col py-6">
           <motion.div
             key={active}
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}>
-            <h3 className="text-9xl font-bold dark:text-white text-black">
+            <h3 className="text-4xl sm:text-6xl md:text-9xl font-bold dark:text-white text-black">
               {testimonials[active].name}
             </h3>
-            <h1 className="text-5xl text-gray-500 dark:text-neutral-500">
+            <h1 className="text-xl sm:text-3xl md:text-5xl text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </h1>
-            <motion.p className="text-2xl text-gray-500 mt-8 dark:text-neutral-300">
+            <motion.p className="text-lg sm:text-xl md:text-2xl text-gray-500 mt-8 dark:text-neutral-300">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -82,16 +83,17 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-6 pt-16 md:pt-0">
+
+          <div className="flex gap-6 pt-12 md:pt-0 justify-center sm:justify-start">
             <button
               onClick={handlePrev}
-              className="h-12 w-12 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button">
-              <IconArrowLeft className="h-8 w-8 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
+              className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button">
+              <IconArrowLeft className="h-6 w-6 sm:h-8 sm:w-8 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
             </button>
             <button
               onClick={handleNext}
-              className="h-12 w-12 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button">
-              <IconArrowRight className="h-8 w-8 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
+              className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button">
+              <IconArrowRight className="h-6 w-6 sm:h-8 sm:w-8 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
             </button>
           </div>
         </div>
